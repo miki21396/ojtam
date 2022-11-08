@@ -1,5 +1,9 @@
+@charset "UTF-8";
+body {
+  justify-content: center;
+}
 body .contents {
-  max-width: 1152px;
+  width: 1152px;
 }
 body .contents header {
   width: 100%;
@@ -32,11 +36,89 @@ body .contents .cursive_imgs #cursive_img {
   margin-left: 646px;
 }
 body .contents footer {
-  width: 100%;
-  height: 130px;
+  margin-top: 80px;
+  width: 100vw;
+  height: 110px;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body .maintitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 30px;
+}
+body .contentss {
+  display: flex;
+  width: 1152px;
+  margin: 0 100px;
+  flex-wrap: wrap;
+}
+body .contentss .content-hover {
+  margin: 20px auto 0;
+  transition-duration: 0.5s;
+  width: 300px;
+  display: flex;
+}
+body .contentss .content-hover .content .texts {
+  margin: 10px;
+}
+body .contentss .content-hover .content .title {
+  width: auto;
+  height: 120px;
+}
+body .contentss .content-hover .content .line {
+  text-decoration: none;
+}
+body .contentss .content-hover .content .more {
+  text-align: right;
+}
+body .contentss .content-hover .content .readmore {
+  justify-content: flex-end;
+  position: relative;
+  font-size: 13px;
+}
+body .line {
+  position: relative;
+  /*アンダーラインの位置を決めるための基準 */
+}
+body a::after {
+  position: absolute;
+  /*親要素であるaタグを基準に位置を指定*/
+  left: 0;
+  /*アンダーラインを各メニュー（aタグ）の左端に指定*/
+  content: "";
+  /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーラインなので何も記載しない*/
+  width: 100%;
+  /*アンダーラインを各aタグの幅に合わせる*/
+  height: 2px;
+  /*アンダーラインの高さ（太さ）*/
+  background: #000000;
+  /*アンダーラインの色*/
+}
+body a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+  transition: transform 0.3s;
+  /*変形の時間*/
+  margin: -5px;
+}
+body a:hover::after {
+  transform: scale(1, 1);
+  /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+body .content-hover:hover {
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=style.css.map */
