@@ -1,0 +1,42 @@
+body .contents {
+  max-width: 1152px;
+}
+body .contents header {
+  width: 100%;
+  margin-top: 60px;
+}
+body .contents header nav ul {
+  display: flex;
+  justify-content: right;
+}
+body .contents header nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+body .contents .main_visual {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .contents .cursive_imgs {
+  position: relative;
+}
+body .contents .cursive_imgs #logo {
+  position: absolute;
+  margin-top: -620px;
+  z-index: 1;
+}
+body .contents .cursive_imgs #cursive_img {
+  position: absolute;
+  margin-top: -268px;
+  margin-left: 646px;
+}
+body .contents footer {
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

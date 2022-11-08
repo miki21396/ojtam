@@ -1,0 +1,54 @@
+body{
+    .contents{
+        max-width: 1152px;
+        header{
+            width: 100%;
+            margin-top: 60px;
+           nav{
+            ul{
+                display: flex;
+                justify-content: right;
+                li{
+                    margin-left: 20px;
+                    list-style: none;
+                }
+            }
+           }
+        }
+        .main_visual{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+    
+        }
+        .cursive_imgs{
+            position: relative;
+            #logo{
+                position: absolute;
+                margin-top: -620px;
+                z-index: 1;
+    
+            }
+            #cursive_img{
+                position: absolute;
+                margin-top: -268px;
+                margin-left: 646px;
+    
+            }
+        }
+        footer{
+            width: 100%;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+
+    }
+
+
+    
+}
