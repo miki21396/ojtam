@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body {
+  justify-content: center;
+}
+body .contents {
+  width: 1152px;
+}
+body .contents header {
+  width: 100%;
+  margin-top: 60px;
+}
+body .contents header nav ul {
+  display: flex;
+  justify-content: right;
+}
+body .contents header nav ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+body .contents .main_visual {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .contents .cursive_imgs {
+  position: relative;
+}
+body .contents .cursive_imgs #logo {
+  position: absolute;
+  margin-top: -620px;
+  z-index: 1;
+}
+body .contents .cursive_imgs #cursive_img {
+  position: absolute;
+  margin-top: -268px;
+  margin-left: 646px;
+}
+
+.maintitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 30px;
+}
+
+.contentss {
+  display: flex;
+  width: 1152px;
+  margin: 0 100px;
+  flex-wrap: wrap;
+}
+.contentss .content-hover {
+  margin: 20px auto 0;
+  transition-duration: 0.5s;
+  width: 300px;
+  display: flex;
+}
+.contentss .content-hover .content .texts {
+  margin: 10px;
+}
+.contentss .content-hover .content .title {
+  width: auto;
+  height: 120px;
+}
+.contentss .content-hover .content .line {
+  text-decoration: none;
+}
+.contentss .content-hover .content .more {
+  text-align: right;
+}
+.contentss .content-hover .content .readmore {
+  justify-content: flex-end;
+  position: relative;
+  font-size: 13px;
+}
+
+.line {
+  position: relative;
+  /*アンダーラインの位置を決めるための基準 */
+}
+
+a::after {
+  position: absolute;
+  /*親要素であるaタグを基準に位置を指定*/
+  left: 0;
+  /*アンダーラインを各メニュー（aタグ）の左端に指定*/
+  content: "";
+  /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーラインなので何も記載しない*/
+  width: 100%;
+  /*アンダーラインを各aタグの幅に合わせる*/
+  height: 2px;
+  /*アンダーラインの高さ（太さ）*/
+  background: #000000;
+  /*アンダーラインの色*/
+}
+
+a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+  transition: transform 0.3s;
+  /*変形の時間*/
+  margin: -5px;
+}
+
+a:hover::after {
+  transform: scale(1, 1);
+  /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
+.content-hover:hover {
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+}
+
+footer {
+  margin-top: 80px;
+  width: 100vw;
+  height: 110px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
