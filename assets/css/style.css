@@ -47,7 +47,7 @@ body .contents .cursive_imgs #cursive_img {
 
 .contentss {
   display: flex;
-  width: 1152px;
+  max-width: 1024px;
   margin: 0 100px;
   flex-wrap: wrap;
 }
@@ -125,11 +125,11 @@ a:hover::after {
 
 body footer {
   margin-top: 80px;
-  width: 100vw;
   height: 130px;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
