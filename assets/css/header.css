@@ -3,6 +3,7 @@ body {
 }
 body .contents {
   width: 1152px;
+  margin: 0 auto;
 }
 body .contents header {
   width: 100%;
@@ -26,11 +27,13 @@ body .contents .cursive_imgs {
 }
 body .contents .cursive_imgs #logo {
   position: absolute;
-  margin-top: -620px;
+  margin-top: -589px;
   z-index: 1;
+  width: 21%;
 }
 body .contents .cursive_imgs #cursive_img {
   position: absolute;
-  margin-top: -268px;
-  margin-left: 646px;
+  margin-top: -236px;
+  margin-left: 654px;
+  width: 43%;
 }/*# sourceMappingURL=header.css.map */

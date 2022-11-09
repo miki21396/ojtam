@@ -4,6 +4,7 @@ body {
 
     .contents {
         width: 1152px;
+        margin: 0 auto;
 
         header {
             width: 100%;
@@ -34,15 +35,17 @@ body {
 
             #logo {
                 position: absolute;
-                margin-top: -620px;
+                margin-top: -589px;
                 z-index: 1;
+                width: 21%;
 
             }
 
             #cursive_img {
                 position: absolute;
-                margin-top: -268px;
-                margin-left: 646px;
+                margin-top: -236px;
+                margin-left: 654px;
+                width: 43%;
 
             }
         }
