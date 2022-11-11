@@ -2,6 +2,12 @@
 
         <!-- MIKI -->
         <p class="maintitle">Latest Articles</p>
+        <!-- main roop starts from here -->
+        <?php
+        if (have_posts()) :
+            while (have_posts()) :
+              the_post():
+        ?>
         <div class="contentss">
             <div class="content-hover">
                 <div class="content">
@@ -14,6 +20,12 @@
                         </a>
                     </div>
                 </div>
+
+                <?php 
+                    endwhile;
+                    else:
+                 ?>
+                 
             </div>
             <div class="content-hover">
                 <div class="content">
