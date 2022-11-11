@@ -2,6 +2,11 @@
 
         <!-- MIKI -->
         <p class="maintitle">Latest Articles</p>
+        <?php 
+        if(have_posts()):
+            while(have_postd()):
+                the_post();
+             ?>
         <div class="contentss">
             <div class="content-hover">
                 <div class="content">
@@ -15,6 +20,10 @@
                     </div>
                 </div>
             </div>
+            <?php endwhile;
+            else:
+             ?>
+             
             <div class="content-hover">
                 <div class="content">
                     <img src="<?php echo get_template_directory_uri();?>/images/post_img_2.png">
