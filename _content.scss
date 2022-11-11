@@ -2,19 +2,21 @@
     text-align: center;
     font-size: 25px;
     margin: 30px;
+    font-weight: 500;
 }
 
 .contentss {
     display: flex;
     max-width: 1024px;
-    margin: 0 100px;
+    margin: 0 200px;
     flex-wrap: wrap; //要素を改行させた
+    justify-content: center;
 
     .content-hover {
         margin: 20px auto 0;
         transition-duration: 0.5s;
         width: 300px;
-        display: flex;
+        // display: flex;
 
 
         .content {
@@ -116,6 +118,7 @@ a::after {
         .contentss {
             max-width: 100%; //max?
             display: block;
+            margin: 0 auto;
 
         }
     }
