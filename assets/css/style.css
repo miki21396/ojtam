@@ -1,61 +1,94 @@
 @charset "UTF-8";
-body {
-  justify-content: center;
+.headers header .logo {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
 }
-body .contents {
-  width: 1152px;
-  margin: 0 auto;
-}
-body .contents header {
-  width: 100%;
-  margin-top: 60px;
-}
-body .contents header nav ul {
+.headers .menu_bar {
   display: flex;
   justify-content: right;
+  margin: 30px;
 }
-body .contents header nav ul li {
+.headers .menu_bar .menu_li {
   margin-left: 20px;
-  list-style: none;
 }
-body .contents .main_visual {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-body .contents .cursive_imgs {
+.headers .kv {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 50px;
   position: relative;
 }
-body .contents .cursive_imgs #logo {
-  position: absolute;
-  margin-top: -589px;
-  z-index: 1;
-  width: 21%;
+.headers .kv .main_visual {
+  width: 100%;
 }
-body .contents .cursive_imgs #cursive_img {
+.headers .kv .cursive_img {
+  right: -1%;
+  top: 247px;
   position: absolute;
-  margin-top: -236px;
-  margin-left: 654px;
-  width: 43%;
+}
+.headers .kv .cursive_sp {
+  display: none;
+  position: absolute;
+}
+.headers .smalltitle {
+  margin-left: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .headers header {
+    display: flex;
+    justify-content: center;
+  }
+  .headers header .logo {
+    position: static;
+    left: 0;
+    width: 40%;
+    margin: 30px 0;
+  }
+  .headers .menu {
+    display: none;
+  }
+  .headers .kv {
+    padding: 0 20px;
+  }
+  .headers .kv .main_visual {
+    width: 100%;
+    height: 230px;
+  }
+  .headers .kv .cursive_img {
+    display: none;
+  }
+  .headers .kv .cursive_sp {
+    position: absolute;
+    display: inline;
+    z-index: 2;
+    left: 6%;
+    width: 60%;
+    top: 4%;
+  }
+  .headers .smalltitle {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 .maintitle {
   text-align: center;
   font-size: 25px;
   margin: 30px;
+  font-weight: 500;
 }
 
 .contentss {
   display: flex;
   max-width: 1024px;
-  margin: 0 100px;
+  margin: 0 200px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .contentss .content-hover {
   margin: 20px auto 0;
   transition-duration: 0.5s;
   width: 300px;
-  display: flex;
 }
 .contentss .content-hover .content .texts {
   margin: 10px;
@@ -139,6 +172,7 @@ a::after {
   body .contentss {
     max-width: 100%;
     display: block;
+    margin: 0 auto;
   }
 }
 body footer {
