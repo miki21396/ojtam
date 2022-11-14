@@ -20,11 +20,13 @@
 }
 .headers .kv .main_visual {
   width: 100%;
+  position: absolute;
 }
 .headers .kv .cursive_img {
   right: -1%;
   top: 247px;
   position: absolute;
+  z-index: 1;
 }
 .headers .kv .cursive_sp {
   display: none;
