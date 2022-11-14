@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .headers header .logo {
   position: absolute;
-  left: 20px;
+  left: 35px;
   z-index: 1;
 }
 .headers .menu_bar {
@@ -31,6 +31,7 @@
   position: absolute;
 }
 .headers .smalltitle {
+  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -163,6 +164,11 @@ a::after {
 .content-hover:hover a::after {
   transform: scale(1, 1);
   /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
+.more_btn {
+  background-color: green;
+  color: aqua;
 }
 
 @media screen and (max-width: 767px) {

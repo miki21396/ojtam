@@ -13,26 +13,29 @@
 </head>
 
 <body>
+
+
     <!-- AKEMI -->
+
     <div class="contents">
         <div class="headers">
             <header>
-                
-                <img class="logo" src="<?php echo get_template_directory_uri();?>/images/logo.png">
+
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
                 <nav class="menu">
                     <ul class="menu_bar">
-                        <li class="menu_li">Menu01</li>
-                        <li class="menu_li">Menu02</li>
-                        <li class="menu_li">Menu03</li>
-                        <li class="menu_li">Menu04</li>
+                        <li class="menu_li">MENU01</li>
+                        <li class="menu_li">MENU02</li>
+                        <li class="menu_li">MENU03</li>
+                        <li class="menu_li">MENU04</li>
                     </ul>
                 </nav>
             </header>
 
             <div class="kv">
-                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_1_pc.png">
-                <img class="cursive_img" src="<?php echo get_template_directory_uri();?>/images/visual_text_pc.png">
-                <img class="cursive_sp" src="<?php echo get_template_directory_uri();?>/images/visual_text_sp.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri(); ?>/images/visual_1_pc.png">
+                <img class="cursive_img" src="<?php echo get_template_directory_uri(); ?>/images/visual_text_pc.png">
+                <img class="cursive_sp" src="<?php echo get_template_directory_uri(); ?>/images/visual_text_sp.png">
             </div>
             <p class="smalltitle">進化し続ける『街』アメリカンビレッジマガジン</p>
         </div>
