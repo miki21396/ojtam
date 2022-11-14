@@ -9,6 +9,13 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+ <!-- slick -->
+ <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" media="screen" />
+ <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" media="screen" />
+ <script src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
 
 </head>
 
@@ -30,9 +37,18 @@
             </header>
 
             <div class="kv">
-                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_1_pc.png">
+                
                 <img class="cursive_img" src="<?php echo get_template_directory_uri();?>/images/visual_text_pc.png">
                 <img class="cursive_sp" src="<?php echo get_template_directory_uri();?>/images/visual_text_sp.png">
+                <div class="slider">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_1_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_2_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_3_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_4_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_5_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_6_pc.png">
+                <img class="main_visual" src="<?php echo get_template_directory_uri();?>/images/visual_7_pc.png">
+                </div>
             </div>
             <p class="smalltitle">進化し続ける『街』アメリカンビレッジマガジン</p>
         </div>
